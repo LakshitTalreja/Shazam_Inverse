@@ -22,7 +22,23 @@ h1 {
     margin: 25px;
     border-radius: 25px;
 }
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s ease, height 0.15s ease;
+    z-index: 9999;
+}
 
+* {
+    cursor: none !important;
+}
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -84,7 +100,7 @@ h1 {
 <body>
 <h1 style="background-color:pink;">Welcome to Shazam⁻¹</h1>
 <div class="buttons">
-    <a href="game.html" target="_self" >Game</a>
+    <a href="artist.html" target="_self" >Game</a>
     <a href="leaderboard.html" target="_self" >Leaderboard</a>
 </div>
 <div class="textbox">
@@ -97,7 +113,8 @@ Complete all challenges to unlock a special surprise at the end of the game.
 <div class="credit">
     <a href="https://github.com/LakshitTalreja/Shazam_Inverse" target="_blank" >Made by Lakshit and Danvath</a>
 </div>
- 
+ <div id="cursor"></div>
+    <script src="glow.js"></script>
 </body>
 
 </html>
