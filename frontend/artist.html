@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.buttons a {
+    background-color: pink;
+    color: purple;
+    padding: 14px 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    min-width: 120px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.buttons a:hover {
+    background-color: fuchsia;
+}
+</style>
     <title>Artists</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,6 +38,11 @@
     <header class="site-header">
         <h1 class="logo">Pick your artist</h1>
     </header>
+
+    <div class="buttons">
+    <a href="main.html" target="_self" >Home</a>
+    <a href="leaderboard.html" target="_self" >Leaderboard</a>
+    </div>
 
     <div class="artists-wrap">
         <div class="artists-grid">
