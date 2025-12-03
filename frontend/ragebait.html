@@ -1,89 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-h1 {
-    color: purple;
-    text-align: center;
-    background-color: pink;
-    padding: 25px;
-    margin: 25px;
-    border-radius: 25px;
-}
-body {
-    background: url("background.jpeg") center center no-repeat;
-    background-size: cover;
-}
-#cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: white;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: width 0.15s ease, height 0.15s ease;
-    z-index: 9999;
-}
-
-* {
-    cursor: none !important;
-}
-.textbox {
-    background-color: pink;
-    color: purple;
-    padding: 10px;
-    margin: 30vh 10vw;
-    border-radius: 25px;
-    line-height: 1.4;
-    text-align: center;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 99%;
-    margin: auto;
-    padding-top: 0px;
-}
-
-.buttons a {
-    background-color: pink;
-    color: purple;
-    padding: 14px 40px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 25px;
-    min-width: 120px;
-    text-align: center;
-    transition: 0.2s ease;
-}
-
-.buttons a:hover {
-    background-color: fuchsia;
-}
-</style>
-<title>Taylor Swift</title>
+    <title>Taylor Swift</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/p5.js"></script>
 </head>
-
 <body>
-    <h1 style="background-color:pink;">WE DO NOT SUPPORT AUTOTUNE ARTISTS</h1>
 
-    <div class="buttons">
-    <a href="artist.html" target="_self" >Back to Game</a>
-    <a href="leaderboard.html" target="_self" >Leaderboard</a>
+<section class="hero">
+    <h1>We do not support artists who use autotune</h1>
+    <p>If this bothers you please contact Danvath, this was entirely his idea</p>
+    <div>
+        <a href="artist.html" class="cta-button">Select a better artist</a>
+        <a href="leaderboard.html" class="cta-button">Leaderboard</a>
     </div>
+</section>
 
-        <div class="textbox">
-    <p>Incase this pisses you off<br>
-        Please contact Danvath ,this was his idea
-    </p>
-    </div>
-    <div id="cursor"></div>
-    <script src="glow.js"></script>
+
+<!-- Cursors -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<div id="trail"></div>
+
+<script src="sketch.js"></script>
+<script src="cursor.js"></script>
+
 </body>
 </html>
